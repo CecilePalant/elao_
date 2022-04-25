@@ -299,9 +299,8 @@
 <p>Petit billet mémo aujourd'hui concernant le partitionnement d'un serveur Proxmox, rien de bien sorcier en soi mais il est toujours bon d'avoir un référentiel auquel se fier.<!--more--></p>
 <p>Utilisant depuis un bon moment des solutions de virtualisation, nous avons pour habitude chez ELAO d'utiliser des containers OpenVZ via la distribution <a href="https://www.proxmox.com/" target="_blank">Proxmox</a>.</p>
 <p>Nous prendrons pour l'exemple une des machines OVH, machines avec lesquelles nous avons l'habitude de travailler. Pour les moins exigeants le partitionnement par défaut proposé peut parfaitement faire l'affaire.</p>
-<p class="text-center">
-    {{}}
-</p>
+<img src="/elao_/pr/456/resized/content/images/blog/2014/proxmox_default_partition_1000.png/d9a725a956f277984d613cbb9e72e5b4.png" alt="Partitionnement-d-un-serveur-proxmox - Partitionnement par défaut OVH" title="Partitionnement-d-un-serveur-proxmox - Partitionnement par défaut OVH" srcset="/elao_/pr/456/resized/content/images/blog/2014/proxmox_default_partition_1000.png/d9a725a956f277984d613cbb9e72e5b4.png 1x,
+/elao_/pr/456/resized/content/images/blog/2014/proxmox_default_partition_1000.png/71098aaf3b9680c83fd6e510fea371d0.png 2x," id="partitionnement-d-un-serveur-proxmox-partitionnement-par-defaut-ovh">
 <p>Il présente cependant un gros défaut qui est celui de ne pas laisser d'espace non partitionné à disposition de Proxmox dans le groupe LV, condition <i>sine qua non</i> pour pouvoir effectuer des sauvegardes de type "snapshot" de nos containers (ou de nos machines virtuelles).</p>
 <p>Pour rappel le backup "à chaud" sous Proxmox fonctionne de la façon suivante:</p>
 <ul>

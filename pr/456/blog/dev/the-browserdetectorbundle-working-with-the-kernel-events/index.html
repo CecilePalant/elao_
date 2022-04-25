@@ -300,9 +300,8 @@
 <p>"To perform some "heavy" action after the response has been streamed to the user".</p>
 </blockquote>
 <p>Une question que vous vous posez surement si vous n'avez pas eu l'occasion de travailler avec cet évènement : "Quand est-ce que je peux utiliser l'évènement "kernel.terminate" pour effectuer mes traitements ?" La réponse en image :</p>
-<p class="text-center">
-    {{}}
-</p>
+<img src="/elao_/pr/456/resized/content/images/blog/2014/kernel_terminate.png/cee0f6938218c92fce1ab0ed5fba4d03.png" alt="Utilisation de lévènement kernel.terminate sous Symfony2" title="Utilisation de lévènement kernel.terminate sous Symfony2" srcset="/elao_/pr/456/resized/content/images/blog/2014/kernel_terminate.png/cee0f6938218c92fce1ab0ed5fba4d03.png 1x,
+/elao_/pr/456/resized/content/images/blog/2014/kernel_terminate.png/319f3e93afc9031d49f2b124e3de609c.png 2x," id="utilisation-de-levenement-kernel-terminate-sous-symfony2">
 <p>Concrètement, vous pouvez quasiment tout faire si vous utilisez cet évènement. A une chose près : votre traitement ne doit pas altérer la réponse. Pourquoi ? Parce qu'il est déclenché après que la réponse soit envoyé au client. Il n'y à donc plus moyen d'y rajouter des informations ou d'en altérer son contenu dans le but de l'envoyer au client. (Attention kernel.terminate a été rajouté en Symfony2.1, donc si vous êtes encore en 2.0, vous pouvez oublier).</p>
 <pre class="code-multiline language-php"><code class="language-php" id="9f38d0d538e22c26e01879f248968dc1"><span class="token comment">// ...</span>
 <span class="token variable">$response</span> <span class="token operator">=</span> <span class="token variable">$kernel</span><span class="token operator">-&gt;</span><span class="token function">handle</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
