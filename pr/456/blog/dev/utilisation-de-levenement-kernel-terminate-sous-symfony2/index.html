@@ -300,9 +300,8 @@
 <p>"To perform some "heavy" action after the response has been streamed to the user".</p>
 </blockquote>
 <p>Une question que vous vous posez surement si vous n'avez pas eu l'occasion de travailler avec cet évènement : "Quand est-ce que je peux utiliser l'évènement "kernel.terminate" pour effectuer mes traitements ?" La réponse en image :</p>
-<div style="text-align:center;">
-![Utilisation de lévènement kernel.terminate sous Symfony2" width="488" height="522](content/images/blog/2013/1331.png)
-</div>
+<img src="/elao_/pr/456/resized/content/images/blog/2013/1331.png/1d68c5938ed28d88d3b92405ea5f53f3.png" alt='Utilisation de lévènement kernel.terminate sous Symfony2" width="488" height="522' title='Utilisation de lévènement kernel.terminate sous Symfony2" width="488" height="522' srcset="/elao_/pr/456/resized/content/images/blog/2013/1331.png/1d68c5938ed28d88d3b92405ea5f53f3.png 1x,
+/elao_/pr/456/resized/content/images/blog/2013/1331.png/ed4995b7864ac6beb522ebe7a6ee231f.png 2x," id="utilisation-de-levenement-kernel-terminate-sous-symfony2-width-488-height-522">
 <p>Concrètement, vous pouvez quasiment tout faire si vous utilisez cet évènement. A une chose près : votre traitement ne doit pas altérer la réponse. Pourquoi ? Parce qu'il est déclenché après que la réponse soit envoyé au client. Il n'y à donc plus moyen d'y rajouter des informations ou d'en altérer son contenu dans le but de l'envoyer au client. (Attention kernel.terminate a été rajouté en Symfony2.1, donc si vous êtes encore en 2.0, vous pouvez oublier).</p>
 <pre class="code-multiline language-php"><code class="language-php" id="38c7dd195387b31fd56c1084d99ce24d"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
 <span class="token comment">// ...</span>

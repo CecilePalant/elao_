@@ -314,11 +314,9 @@
 <li>Si l'utilisateur a déjà été migré, on vérifie le mot de passe avec le hash <code class="code-inline" id="51f01b313d48b72f46376150e6e12a98">bcrypt</code></li>
 </ul>
 <p>Ainsi, chaque utilisateur migrera son mot de passe lors de sa première connexion à la nouvelle plateforme. Une fois que tous les utilisateurs auront été migrés, nous pourront effacer complètement les hashs <code class="code-inline" id="1bc29b36f623ba82aaf6724fd3b16718">md5</code> de la base de données et n'utiliser que <code class="code-inline" id="51f01b313d48b72f46376150e6e12a98">bcrypt</code>.</p>
-<figure style="text-align: center;">
-    <a href="/elao_/pr/456/content/images/blog/2017/password-encoding-switch.png">
-        <img src="/elao_/pr/456/resized/content/images/blog/2017/password-encoding-switch.png/79334b3f7821d50e7b73cb97979bd8f5.png" style="max-width: 600px;" alt="Logique de migration" srcset="/elao_/pr/456/resized/content/images/blog/2017/password-encoding-switch.png/79334b3f7821d50e7b73cb97979bd8f5.png 1x,
+<figure>
+    <img src="/elao_/pr/456/resized/content/images/blog/2017/password-encoding-switch.png/79334b3f7821d50e7b73cb97979bd8f5.png" style="max-width: 600px;" alt="Logique de migration" srcset="/elao_/pr/456/resized/content/images/blog/2017/password-encoding-switch.png/79334b3f7821d50e7b73cb97979bd8f5.png 1x,
 /elao_/pr/456/resized/content/images/blog/2017/password-encoding-switch.png/9611da3a0d52a9b2773c136fc252b4e1.png 2x," id="logique-de-migration">
-    </a>
     <figcaption>Processus d'authentification</figcaption>
 </figure>
 <h1 id="symfony" class="anchor-title"><a href="#symfony">Symfony</a></h1>
