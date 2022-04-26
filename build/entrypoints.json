@@ -2,37 +2,24 @@
   "entrypoints": {
     "app": {
       "js": [
-        "/elao_/build/runtime.6e0dfe64.js",
-        "/elao_/build/17.c81b2e4a.js",
-        "/elao_/build/190.206b924f.js",
-        "/elao_/build/app.1f0cf750.js"
+        "/elao_/build/runtime.c3b9d4eb.js",
+        "/elao_/build/948.5cd95e1a.js",
+        "/elao_/build/190.965acec9.js",
+        "/elao_/build/app.13ec352b.js"
       ],
       "css": [
-        "/elao_/build/321.bed3d1bb.css"
+        "/elao_/build/app.b331bccf.css"
       ]
     },
     "see": {
       "js": [
-        "/elao_/build/runtime.6e0dfe64.js",
-        "/elao_/build/17.c81b2e4a.js",
-        "/elao_/build/690.ad961276.js",
-        "/elao_/build/see.4d5d9aea.js"
-      ]
-    },
-    "style": {
-      "js": [
-        "/elao_/build/runtime.6e0dfe64.js"
+        "/elao_/build/runtime.c3b9d4eb.js",
+        "/elao_/build/948.5cd95e1a.js",
+        "/elao_/build/930.0ca465c0.js",
+        "/elao_/build/see.467a5c76.js"
       ],
       "css": [
-        "/elao_/build/321.bed3d1bb.css"
-      ]
-    },
-    "see_style": {
-      "js": [
-        "/elao_/build/runtime.6e0dfe64.js"
-      ],
-      "css": [
-        "/elao_/build/see_style.24930bce.css"
+        "/elao_/build/see.24930bce.css"
       ]
     }
   }
