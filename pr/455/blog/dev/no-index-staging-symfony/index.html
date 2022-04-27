@@ -45,9 +45,9 @@
                         document.querySelector('html').classList.remove('no-js');
         </script>
 
-                    <link rel="stylesheet" href="/elao_/pr/455/build/321.4c8b8dd6.css">
+                    <link rel="stylesheet" href="/elao_/pr/455/build/app.43410ea0.css">
         
-                        <script src="/elao_/pr/455/build/runtime.c0e1f0f1.js" defer></script><script src="/elao_/pr/455/build/17.c81b2e4a.js" defer></script><script src="/elao_/pr/455/build/190.206b924f.js" defer></script><script src="/elao_/pr/455/build/app.1f0cf750.js" defer></script>
+                        <script src="/elao_/pr/455/build/runtime.efd241e3.js" defer></script><script src="/elao_/pr/455/build/948.5cd95e1a.js" defer></script><script src="/elao_/pr/455/build/190.965acec9.js" defer></script><script src="/elao_/pr/455/build/app.13ec352b.js" defer></script>
 
                     
 
@@ -73,8 +73,8 @@
     </script>
 
         <!-- S.E.E. -->
-        <meta name="see" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;690.ad961276.js&quot;,&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see.4d5d9aea.js&quot;&#x5D;">
-        <meta name="see_style" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see_style.24930bce.css&quot;&#x5D;">
+        <meta name="see" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;930.0ca465c0.js&quot;,&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see.467a5c76.js&quot;&#x5D;">
+        <meta name="see_style" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see.24930bce.css&quot;&#x5D;">
     </head>
     <body>
                     <header class="header">
@@ -299,11 +299,11 @@
 
                     <ol class="table-of-content" data-aos="fade-up">
                                     <li class="table-of-content__item">
-                        <a href="#les-meilleures-solutions-l-authentification-cote-serveur-et-le-filtre-par-ip">Les meilleures solutions 💡: l&#039;authentification côté serveur et le filtre par IP</a>
+                        <a href="#les-meilleures-solutions-d-l-authentification-cote-serveur-et-le-filtre-par-ip">Les meilleures solutions ð¡: l&#039;authentification côté serveur et le filtre par IP</a>
 
                                             </li>
                                     <li class="table-of-content__item">
-                        <a href="#la-chose-a-ne-pas-faire-interdire-l-indexation-via-le-robots-txt">La chose à ne pas faire 🙅‍♀️ : interdire l&#039;indexation via le robots.txt</a>
+                        <a href="#la-chose-a-ne-pas-faire-d-interdire-l-indexation-via-le-robots-txt">La chose à ne pas faire ð‍♀️ : interdire l&#039;indexation via le robots.txt</a>
 
                                             </li>
                                     <li class="table-of-content__item">
@@ -323,11 +323,11 @@
 <li>Le contenu relatif à l'entreprise est disponible sous plusieurs urls, induisant un fort risque de dilution de la pertinence du contenu du site "officiel", puisque celui-ci peut être proposé sur deux pages différentes (c'est ce qu'on appelle la duplication de contenu).</li>
 </ul>
 <p>Voyons ensemble <strong>quelques solutions pour ne pas indexer les pages publiques de nos applicatifs</strong>, si nous n'en avons pas besoin.</p>
-<h2 id="les-meilleures-solutions-l-authentification-cote-serveur-et-le-filtre-par-ip" class="anchor-title"><a href="#les-meilleures-solutions-l-authentification-cote-serveur-et-le-filtre-par-ip">Les meilleures solutions 💡: l'authentification côté serveur et le filtre par IP</a></h2>
+<h2 id="les-meilleures-solutions-d-l-authentification-cote-serveur-et-le-filtre-par-ip" class="anchor-title"><a href="#les-meilleures-solutions-d-l-authentification-cote-serveur-et-le-filtre-par-ip">Les meilleures solutions ð¡: l'authentification côté serveur et le filtre par IP</a></h2>
 <p>Le meilleur moyen d'empêcher tout crawl des robots et visites des internautes est d'<strong>imposer une authentification côté serveur</strong>. Une autre bonne solution est de filtrer l'accès au site selon l'IP, c'est à dire qu'on autorise l'affichage que si vous y êtes autorisés.
 Bien sûr, dans les deux cas, les robots ne peuvent pas accéder aux pages, empêchant de ce fait tout risque de crawl et donc d'indexation.</p>
 <p>Néanmoins, ces deux solutions peuvent parfois entraîner de nombreuses contraintes, par exemple si vous utilisez différents sous-domaines pour vos assets ou pour vos apis. La recette peut alors se compliquer sur les features les plus importantes du site.</p>
-<h3 id="le-plan-b-l-en-tete-de-reponse-http" class="anchor-title"><a href="#le-plan-b-l-en-tete-de-reponse-http">Le plan B 👍 : l'en-tête de réponse HTTP</a></h3>
+<h3 id="le-plan-b-d-l-en-tete-de-reponse-http" class="anchor-title"><a href="#le-plan-b-d-l-en-tete-de-reponse-http">Le plan B ð : l'en-tête de réponse HTTP</a></h3>
 <p>Cette <strong>instruction X-Robots-Tag indiquera aux robots de ne pas indexer la page</strong>. Attention, cette méthode ne doit pas être couplée avec une directive de disallow de l'intégralité du robots.txt, puisque les bots n'auraient jamais accès à ce tag.</p>
 <p>Une des variantes est la balise meta robots noindex, <a href="https://support.google.com/webmasters/answer/93710?hl=fr" target="_blank">c'est une des solutions décrites par Google dans sa documentation officielle</a>.</p>
 <h3 id="comment-parametrer-ce-tag-sur-symfony" class="anchor-title"><a href="#comment-parametrer-ce-tag-sur-symfony">Comment paramétrer ce tag sur Symfony ?</a></h3>
@@ -348,10 +348,10 @@ Bien sûr, dans les deux cas, les robots ne peuvent pas accéder aux pages, emp�
 <span class="token directive-inline property">SetEnv</span> X-Robots-Tag noindex
 ...</code></pre>
 <p>Cette solution a l'avantage de fonctionner <strong>peu importe la version de Symfony, le framework ou le langage utilisé par votre application</strong>. De plus, elle ne pourra pas être désactivée lors d'un mauvais déploiement.</p>
-<h2 id="la-chose-a-ne-pas-faire-interdire-l-indexation-via-le-robots-txt" class="anchor-title"><a href="#la-chose-a-ne-pas-faire-interdire-l-indexation-via-le-robots-txt">La chose à ne pas faire 🙅‍♀️ : interdire l'indexation via le robots.txt</a></h2>
+<h2 id="la-chose-a-ne-pas-faire-d-interdire-l-indexation-via-le-robots-txt" class="anchor-title"><a href="#la-chose-a-ne-pas-faire-d-interdire-l-indexation-via-le-robots-txt">La chose à ne pas faire ð‍♀️ : interdire l'indexation via le robots.txt</a></h2>
 <p>Grâce à la directive <code class="code-inline" id="948f1aaceb85fb33069817d3d356b762">disallow</code>, on pense pouvoir empêcher les robots de visiter et d'indexer les pages de notre site. Mais ce n'est pas tout à fait l'objectif de <code class="code-inline" id="948f1aaceb85fb33069817d3d356b762">disallow</code>, <strong>qui n'empêche pas l'indexation mais le crawl</strong>. Résultat : vous pouvez retrouver des pages indexées dans les moteurs de recherche, même si le robot ne remonte ni meta description, ni title. Vous pouvez ainsi lire le fameux message :</p>
 <p><code class="code-inline" id="cb147c23623a83dc80765e1d812833b6">A description for this result is not available because of this sites's robots.txt</code></p>
-<p>De plus, il n'est pas rare de trouver en production des fichiers <code class="code-inline" id="aa2646a667ee1cd83235786dccef4a26">robots.txt</code> paramétrés pour le staging, car ils auraient été oubliés lors de la mise en production 🙀.</p>
+<p>De plus, il n'est pas rare de trouver en production des fichiers <code class="code-inline" id="aa2646a667ee1cd83235786dccef4a26">robots.txt</code> paramétrés pour le staging, car ils auraient été oubliés lors de la mise en production ð.</p>
 <p>Bon à savoir : la directive Noindex, qui était rarement utilisée, <a href="https://webmasters.googleblog.com/2019/07/a-note-on-unsupported-rules-in-robotstxt.html" target="_blank">a été officiellement abandonnée par Google</a>.</p>
 <h2 id="oups-mon-site-avec-des-urls-de-staging-a-ete-indexe" class="anchor-title"><a href="#oups-mon-site-avec-des-urls-de-staging-a-ete-indexe">Oups, mon site avec des urls de staging a été indexé ...</a></h2>
 <p>Faites le nécessaire pour empêcher les futures visites de robots. Vous pouvez ensuite utiliser <a href="https://www.google.com/webmasters/tools/removals" target="_blank">l'outil de suppression d'URL de la Search Console</a>, et demander la suppression des URLs problématiques.</p></body>

@@ -45,9 +45,9 @@
                         document.querySelector('html').classList.remove('no-js');
         </script>
 
-                    <link rel="stylesheet" href="/elao_/pr/455/build/321.4c8b8dd6.css">
+                    <link rel="stylesheet" href="/elao_/pr/455/build/app.43410ea0.css">
         
-                        <script src="/elao_/pr/455/build/runtime.c0e1f0f1.js" defer></script><script src="/elao_/pr/455/build/17.c81b2e4a.js" defer></script><script src="/elao_/pr/455/build/190.206b924f.js" defer></script><script src="/elao_/pr/455/build/app.1f0cf750.js" defer></script>
+                        <script src="/elao_/pr/455/build/runtime.efd241e3.js" defer></script><script src="/elao_/pr/455/build/948.5cd95e1a.js" defer></script><script src="/elao_/pr/455/build/190.965acec9.js" defer></script><script src="/elao_/pr/455/build/app.13ec352b.js" defer></script>
 
                     
 
@@ -73,8 +73,8 @@
     </script>
 
         <!-- S.E.E. -->
-        <meta name="see" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;690.ad961276.js&quot;,&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see.4d5d9aea.js&quot;&#x5D;">
-        <meta name="see_style" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see_style.24930bce.css&quot;&#x5D;">
+        <meta name="see" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;930.0ca465c0.js&quot;,&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see.467a5c76.js&quot;&#x5D;">
+        <meta name="see_style" content="&#x5B;&quot;&#x5C;&#x2F;elao_&#x5C;&#x2F;pr&#x5C;&#x2F;455&#x5C;&#x2F;build&#x5C;&#x2F;see.24930bce.css&quot;&#x5D;">
     </head>
     <body>
                     <header class="header">
@@ -344,7 +344,7 @@ Notamment, l&#039;outil <strong>manalize</strong> a été remplacé par <a href=
 <h3 id="pre-requis" class="anchor-title"><a href="#pre-requis">Pré-requis</a></h3>
 <p>Tout d'abord, installons l'outil de configuration en ligne de commande dédié : <strong>manalize</strong></p>
 <pre class="code-multiline"><code id="1c12d82a21d2bf7d92077b9329bdf273">curl -LSs https://raw.githubusercontent.com/manala/manalize/master/installer.php | php</code></pre>
-<p><em>💡 Note :</em> il est aussi possible de <a href="https://github.com/manala/manalize#installation" target="_blank">l'installer via git ou composer</a>.</p>
+<p><em>ð¡ Note :</em> il est aussi possible de <a href="https://github.com/manala/manalize#installation" target="_blank">l'installer via git ou composer</a>.</p>
 <p>Ensuite, Manala s'appuie sur <em>Vagrant</em> et <em>VirtualBox</em> pour créer des machines virtuelles et sur <em>Ansible</em> pour les configurer. Il nous faudra donc <a href="https://github.com/manala/manalize#prerequisites" target="_blank">installer sur notre ordinateur tous ces pré-requis</a> :</p>
 <ul>
 <li><a href="http://php.net" target="_blank">PHP</a></li>
@@ -352,7 +352,7 @@ Notamment, l&#039;outil <strong>manalize</strong> a été remplacé par <a href=
 <li><a href="https://github.com/vagrant-landrush/landrush" target="_blank">Vagrant Landrush</a></li>
 <li><a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a></li>
 </ul>
-<p><em>💡 Note :</em> manalize est capable de nous confirmer que tous les pré-requis sont correctement installés avec la commande :</p>
+<p><em>ð¡ Note :</em> manalize est capable de nous confirmer que tous les pré-requis sont correctement installés avec la commande :</p>
 <pre class="code-multiline"><code id="7a6a99925dca7b39ff83b0e6d327d94a">manalize check:requirements</code></pre>
 <p>Et voila, nous sommes prêts à manalizer notre projet web !</p>
 <h3 id="au-lancement" class="anchor-title"><a href="#au-lancement">Au lancement</a></h3>
@@ -369,14 +369,14 @@ cd acme</code></pre>
 <p>Puisque nous travaillons beaucoup avec Symfony chez élao, Manala propose une pré-configuration adaptée aux projets Symfony, embarquant entre autres PHP et Mysql. C'est ce que j'utiliserai ici :</p>
 <img src="/elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/setup.png/79a7632da7cb317d5173f81526b98555.png" alt="" title="" srcset="/elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/setup.png/79a7632da7cb317d5173f81526b98555.png 1x,
 /elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/setup.png/280017981a475746ccfe6bc069285483.png 2x," id="79a7632da7cb317d5173f81526b98555-png">
-<p><em>💡 Qu'est-ce qui est créé ?</em></p>
+<p><em>ð¡ Qu'est-ce qui est créé ?</em></p>
 <ul>
 <li><code class="code-inline" id="12387cce3d2ee154f0b73f9197c96398">Vangrantfile</code> : Décrit les propriétés de la machine virtuelle pour Vagrant.</li>
 <li><code class="code-inline" id="a7596acad1e750b7962fff8ddf129e90">ansible/.manalize.yml</code> : Fichier de configuration Manala persistant les choix faits lors du setup interactif, à partir duquel sont générés les fichiers de configuration Ansible.</li>
 <li><code class="code-inline" id="eccb67d5d171ecdd20bf5c7fbcb9afd1">ansible/*.yml</code> : Fichiers de configuration Ansible configurant le système de fichiers de la VM, Nginx, PHP et toute technologie nécessaire au fonctionnement du projet.</li>
 <li><code class="code-inline" id="b67911656ef5d18c4ae36cb6741b7965">Makefile</code> : Liste de commandes Make servant à piloter la VM et le projet depuis la console.</li>
 </ul>
-<p><em>💡 Note :</em> Ces fichiers font maintenant partie du code source du projet et seront versionnés et publiés dans Git. Ils pourront également évoluer et s'étoffer au fur et à mesure de la vie du projet.</p>
+<p><em>ð¡ Note :</em> Ces fichiers font maintenant partie du code source du projet et seront versionnés et publiés dans Git. Ils pourront également évoluer et s'étoffer au fur et à mesure de la vie du projet.</p>
 <h3 id="au-quotidien" class="anchor-title"><a href="#au-quotidien">Au quotidien</a></h3>
 <h4 id="creer-la-vm" class="anchor-title"><a href="#creer-la-vm">Créer la VM</a></h4>
 <p>Lorsque je viens de mettre en place Manala sur mon projet, ou bien lorsque je clone un projet existant, utilisant déjà Manala, sur ma machine hôte; je dois d'abord créer la machine virtuelle :</p>
@@ -387,7 +387,7 @@ cd acme</code></pre>
 <p>Mon app est maintenant disponible à l'adresse suivante : <a href="http://acme.vm" target="_blank">http://acme.vm</a></p>
 <img src="/elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/symfony_in_vm.png/407914250a9ed9693198379d41b03acd.png" alt="" title="" srcset="/elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/symfony_in_vm.png/407914250a9ed9693198379d41b03acd.png 1x,
 /elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/symfony_in_vm.png/349aa76dbad742dcff6bb5535844fa5b.png 2x," id="407914250a9ed9693198379d41b03acd-png">
-<p>Mission accomplie ! 🎉</p>
+<p>Mission accomplie ! ð</p>
 <h4 id="entrer-dans-la-vm" class="anchor-title"><a href="#entrer-dans-la-vm">Entrer dans la VM</a></h4>
 <p>Mon projet ne tourne pas localement sur mon poste, mais dans une machine virtuelle (c'était le but).</p>
 <p>C'est pourquoi, pour accéder à des fonctions internes comme la console Symfony, je vais devoir lancer <code class="code-inline" id="834e3741acba32abc672bec6be613b2f">bin/console</code> <em>dans</em> la VM; afin que le script s'execute dans le contexte de la VM, avec sa version de PHP et son système de fichiers.</p>
@@ -396,7 +396,7 @@ cd acme</code></pre>
 <p>Une fois connecté, je suis dans le répertoire de mon application et peux accéder à la console Symfony :</p>
 <img src="/elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/symfony_cli_in_vm.png/b08ffa537bc5d5ebcf11074eb9be277f.png" alt="" title="" srcset="/elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/symfony_cli_in_vm.png/b08ffa537bc5d5ebcf11074eb9be277f.png 1x,
 /elao_/pr/455/resized/content/images/blog/2019/manalize-virtualiser-son-environnement-de-developpement/symfony_cli_in_vm.png/dc23d89fae934375acb631115a0eea5d.png 2x," id="b08ffa537bc5d5ebcf11074eb9be277f-png">
-<p><em>💡 Notez le chemin du répertoire courant :</em> je suis dans le système de fichiers de la VM, plus sur ma machine !</p>
+<p><em>ð¡ Notez le chemin du répertoire courant :</em> je suis dans le système de fichiers de la VM, plus sur ma machine !</p>
 <h2 id="le-tester-c-est-l-adopter" class="anchor-title"><a href="#le-tester-c-est-l-adopter">Le tester, c'est l'adopter !</a></h2>
 <p>Nous utilisons <a href="http://manala.io" target="_blank">Manala</a> depuis plusieurs années pour nos environnements de développement, l'outil est maintenant mature et stable.</p>
 <p>Il est également totalement open-source, disponible et utilisable par tous.</p>
@@ -404,7 +404,7 @@ cd acme</code></pre>
 Pourquoi ne pas tester un petit <code class="code-inline" id="be798b2aba437dca70435f4c6d61d29c">manalize setup .</code> dès maintenant et voir votre projet tourner dans un environnement virtuel ?</p>
 <h2 id="une-derniere-chose" class="anchor-title"><a href="#une-derniere-chose">Une dernière chose ...</a></h2>
 <p>En 2019, une nouvelle mouture de <code class="code-inline" id="f4e13a6099d36e3d648f91bcd0d2fd58">manalize</code> devrait pointer le bout de son nez, encore plus cool !
-Mais ça fera l'objet d'un prochain article. 😉</p>
+Mais ça fera l'objet d'un prochain article. ð</p>
 <div class="admonition info">
 <p class="admonition-title">Breaking news!</p>
 <p>
