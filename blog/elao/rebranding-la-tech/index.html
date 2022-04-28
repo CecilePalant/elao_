@@ -382,8 +382,8 @@
 <li>Stenope vous donne un grand contrôle sur la manière dont sont récupérés et hydratés ces contenus.</li>
 <li>Il ne vous reste qu'à utiliser vos objets métier comme bon vous semble, par exemple dans des controllers et des templates twig.</li>
 </ul>
-<img src="/elao_/resized/content/images/blog/2021/rebranding-la-tech/stenope.png/aa729407d1a85ea1b427c72e4a603067.png" alt="stenope-cli" title="stenope-cli" srcset="/elao_/resized/content/images/blog/2021/rebranding-la-tech/stenope.png/aa729407d1a85ea1b427c72e4a603067.png 1x,
-/elao_/resized/content/images/blog/2021/rebranding-la-tech/stenope.png/59414968a937dc71dd31cb95c173d4e4.png 2x," id="stenope-cli">
+<img src="/elao_/resized/content/images/blog/2021/rebranding-la-tech/stenope.png/fbe310a74d209256993faa0b25723b71.png" alt="stenope-cli" title="stenope-cli" srcset="/elao_/resized/content/images/blog/2021/rebranding-la-tech/stenope.png/fbe310a74d209256993faa0b25723b71.png 1x,
+/elao_/resized/content/images/blog/2021/rebranding-la-tech/stenope.png/fdcfdf8503fc657509419d83d0a2f422.png 2x," id="stenope-cli">
 <p>Stenope n'est pas un générateur de site statique prêt à l'emploi (l'open-source compte déjà de nombreux projets de qualité répondant à ce besoin) : Stenope c'est un ensemble d'outils pour générer des sites statiques sur-mesure dans Symfony !</p>
 <h2 id="setup-du-projet" class="anchor-title"><a href="#setup-du-projet">Setup du projet</a></h2>
 <p>Comme à notre habitude chez Elao, nous utilisons notre outil fait-maison qui nous permet d’industrialiser nos environnements de travail : <a href="https://www.manala.io/" target="_blank">Manala</a>. Pour ce besoin précis d’obtenir un site qui tourne - rapidement - sous Symfony, notre collègue <a href="/elao_/la-tribu/frey">nervo</a> - principal mainteneur du projet - nous a concocté une recipe nommée <a href="https://manala.github.io/manala-recipes/recipes/lazy.symfony/" target="_blank">lazy.symfony</a>, qui, comme son nom l’indique, promet de ne pas trop s'en faire. Rien à installer, mis à part Docker.</p>
@@ -412,8 +412,8 @@ Bien entendu, dans le cadre d'une refonte, n'oublions pas les fondamentaux:</p>
 <li>Accessibilité : images sans balise alt, icones non-explicitées, formulaires non-accessibles, statut des liens internes et externes</li>
 </ul>
 <p>Cet outil s'appelle Accesseo, il fait encore l'objet de quelques ajustements à la suite du test intensif qu'il a subi. Nous le rendrons bientôt accessible, et espérons qu'il vous servira peut-être !</p>
-<img src="/elao_/resized/content/images/blog/2021/rebranding-la-tech/accesseo.png/24ab6d4ee670b8aaa06934bf63f38e70.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2021/rebranding-la-tech/accesseo.png/24ab6d4ee670b8aaa06934bf63f38e70.png 1x,
-/elao_/resized/content/images/blog/2021/rebranding-la-tech/accesseo.png/c4a774006860c288064e8468b3961877.png 2x," id="24ab6d4ee670b8aaa06934bf63f38e70-png">
+<img src="/elao_/resized/content/images/blog/2021/rebranding-la-tech/accesseo.png/ed7bc77227132c79b7046d9111680797.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2021/rebranding-la-tech/accesseo.png/ed7bc77227132c79b7046d9111680797.png 1x,
+/elao_/resized/content/images/blog/2021/rebranding-la-tech/accesseo.png/b255af6053c8ee0a7b406a06e22ae8d1.png 2x," id="ed7bc77227132c79b7046d9111680797-png">
 <h2 id="images-et-performances" class="anchor-title"><a href="#images-et-performances">Images et performances</a></h2>
 <p>Stenope ne fournit rien pour le resize d'images : le choix de l'outil et de son implémentation est libre. Pour nous, différentes options se sont présentées pour afficher dans les images dans la bonne taille, tout en bénéficiant de bonnes performances de chargement. Nous avions évoqué un CDN Thumbor, mais finalement, notre choix s'est porté sur <a href="https://glide.thephpleague.com/" target="_blank">Glide</a>. Nous obtenons une intégration souple et facile à utiliser.</p>
 <p>Chaque image du site existe en 2 versions au minimum :</p>
@@ -430,8 +430,8 @@ Dans la même logique de performance liée aux images, nous utilisons le format 
 <p>Les navigateurs qui ne supportent par le WebP verront quand même les images en JPEG.</p>
 <h2 id="deploiement-continu" class="anchor-title"><a href="#deploiement-continu">Déploiement continu</a></h2>
 <p>Par nature, le déploiement d'un site statique est simple et sans prise de tête (💘) : on build, et déploie les fichiers statiques sur un serveur en SSH (via <code class="code-inline" id="8a444a43bdf534c0c6338bb7809659b3">scp</code> ou <code class="code-inline" id="89a4551b0f29c1a652648b1cb8747021">rsync</code>). Il est alors aisé de mettre en place un <a href="https://github.com/Elao/elao_/blob/master/.github/workflows/deploy.yaml" target="_blank">workflow Github</a> pour faire ce travail pour nous. Nous avons même poussé pour obtenir un deploy directement sur Github Pages avec un aperçu par Pull Request, ce qui est fortement appréciable pour commenter en équipe un rendu ou un contenu avant de le merger.</p>
-<img src="/elao_/resized/content/images/blog/2021/rebranding-la-tech/github-workflow.png/10ad112c8b7be9d90dd2a9a7cadbcf34.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2021/rebranding-la-tech/github-workflow.png/10ad112c8b7be9d90dd2a9a7cadbcf34.png 1x,
-/elao_/resized/content/images/blog/2021/rebranding-la-tech/github-workflow.png/55c8a8d04943b720813d624069a60732.png 2x," id="10ad112c8b7be9d90dd2a9a7cadbcf34-png">
+<img src="/elao_/resized/content/images/blog/2021/rebranding-la-tech/github-workflow.png/d8bec33006c57d5554208a52b26fa826.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2021/rebranding-la-tech/github-workflow.png/d8bec33006c57d5554208a52b26fa826.png 1x,
+/elao_/resized/content/images/blog/2021/rebranding-la-tech/github-workflow.png/34ae2bba24e717c8d3dc96afca321026.png 2x," id="d8bec33006c57d5554208a52b26fa826-png">
 <h2 id="sources" class="anchor-title"><a href="#sources">Sources</a></h2>
 <ul>
 <li>Le site Elao (propulsé par Stenope) : <a href="https://github.com/Elao/elao_" target="_blank">https://github.com/Elao/elao_</a></li>

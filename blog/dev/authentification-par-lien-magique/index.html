@@ -324,18 +324,18 @@
                 <body><h1 id="lien-magique" class="anchor-title"><a href="#lien-magique">Lien magique</a></h1>
 <p>Nous avons récemment pris le parti pour l'un de nos dernier projet de proposer une authentification par "lien magique". Voici ce qui nous a poussé à faire cette expérience ainsi que nos retours.</p>
 <p>L'authentification par "lien magique" est notamment utilisée par Slack qui propose cette fonctionnalité dans son client et qui nous a grandement inspiré.</p>
-<img src="/elao_/resized/content/images/blog/2018/magic-link-slack.png/661f595582c17a0fa49a37a90e5b09e5.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2018/magic-link-slack.png/661f595582c17a0fa49a37a90e5b09e5.png 1x,
-/elao_/resized/content/images/blog/2018/magic-link-slack.png/41afab497d3fb158748b915cd13bc93c.png 2x," id="661f595582c17a0fa49a37a90e5b09e5-png">
+<img src="/elao_/resized/content/images/blog/2018/magic-link-slack.png/5bac3b663a3200ddfbf09fcf1feee726.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2018/magic-link-slack.png/5bac3b663a3200ddfbf09fcf1feee726.png 1x,
+/elao_/resized/content/images/blog/2018/magic-link-slack.png/de8a29eac149a4ab62015e3395aaa7f9.png 2x," id="5bac3b663a3200ddfbf09fcf1feee726-png">
 <p>Pour ce projet, avons utilisé cette méthode d'authentification sur deux app mobile ainsi que sur une app backend.</p>
 <h2 id="fonctionnement" class="anchor-title"><a href="#fonctionnement">Fonctionnement</a></h2>
 <p>L'authentification par lien magique déporte toute la gestion des mots de passe sur la boîte mail de l'utilisateur. Celui-ci fournit son adresse email à l'application lorsqu'il souhaite s'y connecter, un lien d'authentification contenant un token lui est envoyé. L'utilisateur se connecte ensuite à sa boite mail puis clique sur le lien et est ensuite connecté sur l'application.</p>
-<img src="/elao_/resized/content/images/blog/2018/magic-link.png/2676b0b67b9e338185051ef651f0c607.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2018/magic-link.png/2676b0b67b9e338185051ef651f0c607.png 1x,
-/elao_/resized/content/images/blog/2018/magic-link.png/cd92928de5a3196fa0f54b38b2217f8e.png 2x," id="2676b0b67b9e338185051ef651f0c607-png">
+<img src="/elao_/resized/content/images/blog/2018/magic-link.png/6040e96a1e85792b1e260e4e04e4f918.png" alt="" title="" srcset="/elao_/resized/content/images/blog/2018/magic-link.png/6040e96a1e85792b1e260e4e04e4f918.png 1x,
+/elao_/resized/content/images/blog/2018/magic-link.png/55d6c14841c25363bf0da7495a0a38bd.png 2x," id="6040e96a1e85792b1e260e4e04e4f918-png">
 <h2 id="un-constat" class="anchor-title"><a href="#un-constat">Un constat</a></h2>
 <p>Qu'est ce qui nous a poussé à mettre en place ce système ? C'est d'abord une idée qui a germé face à un constat.</p>
 <p>En tant que développeurs et utilisateurs d'internet, nous sommes plusieurs à avoir fait le constat que beaucoup d'utilisateurs oublient très fréquemment leur mot de passe. En effet, une fois connecté à une application, grâce à des mécanismes comme le "Remember Me" ou les sessions longues, il peut se passer plusieurs semaines voir mois avant de devoir resaisir son mot de passe. Un grand nombre de connexions passent alors par une procédure d'oubli de mot de passe et donc par la boite email de l'utilisateur.</p>
-<img src="/elao_/resized/content/images/blog/2018/you-cant-leak-passwords-meme.png/b1144c2a39c34eb75486e400bddffbaa.png" alt="You can't leak passwords if you don't store passwords." title="You can't leak passwords if you don't store passwords." srcset="/elao_/resized/content/images/blog/2018/you-cant-leak-passwords-meme.png/b1144c2a39c34eb75486e400bddffbaa.png 1x,
-/elao_/resized/content/images/blog/2018/you-cant-leak-passwords-meme.png/fe1798e40c0402c4306bd67b2c4f6d54.png 2x," id="you-can-t-leak-passwords-if-you-don-t-store-passwords">
+<img src="/elao_/resized/content/images/blog/2018/you-cant-leak-passwords-meme.png/f8efb1d42dffde76086b73024cfdfdd2.png" alt="You can't leak passwords if you don't store passwords." title="You can't leak passwords if you don't store passwords." srcset="/elao_/resized/content/images/blog/2018/you-cant-leak-passwords-meme.png/f8efb1d42dffde76086b73024cfdfdd2.png 1x,
+/elao_/resized/content/images/blog/2018/you-cant-leak-passwords-meme.png/99acd5e41bda1ba5e2e25b41ee42483d.png 2x," id="you-can-t-leak-passwords-if-you-don-t-store-passwords">
 <p>Ensuite nous y avons vu quelques avantages :</p>
 <ul>
 <li>Sans mots de passe à gérer, nous n'aurions pas à développer les fonctionnalités de l'oubli et de changement de mots de passes, donc un gain de temps.</li>

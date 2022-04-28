@@ -297,8 +297,8 @@
 Avant de lancer la mise à jour, copier le fichier <strong>InstallESD.dmg</strong> vers un emplacement de sauvegarde, en effet une fois la mise à jour faites le package sera automatiquement supprimé.</p>
 <p>2.-  Connectez une clé USB formatée à votre machine, si vous le faites avec l'utilitaire de disque la partition par défaut devrait s'appeler "Untitled" modifiez les instruction en conséquence si ce n'est pas le cas chez vous.</p>
 <p>Attention pour cette partie il faut bien faire attention de sélectionner "GUID Partition Table" dans les options lors de la création de la partition comme ci-dessous:</p>
-<img src="/elao_/resized/content/images/blog/2014/OSX_Yosemite.png/b81f857027073d4a8934c035db7389bf.png" alt="Créer une clé bootable osx yosemite" title="Créer une clé bootable osx yosemite" srcset="/elao_/resized/content/images/blog/2014/OSX_Yosemite.png/b81f857027073d4a8934c035db7389bf.png 1x,
-/elao_/resized/content/images/blog/2014/OSX_Yosemite.png/c27219f436868710233c477f3769929b.png 2x," id="creer-une-cle-bootable-osx-yosemite">
+<img src="/elao_/resized/content/images/blog/2014/OSX_Yosemite.png/1683b2233950a460ca15fc6388dba54b.png" alt="Créer une clé bootable osx yosemite" title="Créer une clé bootable osx yosemite" srcset="/elao_/resized/content/images/blog/2014/OSX_Yosemite.png/1683b2233950a460ca15fc6388dba54b.png 1x,
+/elao_/resized/content/images/blog/2014/OSX_Yosemite.png/70c2d4677e8dda68b273e41c2382eaf5.png 2x," id="creer-une-cle-bootable-osx-yosemite">
 <p>3.-  Exécuter la liste d'instructions suivantes:</p>
 <pre class="code-multiline"><code id="e2399530d48237404a8785a1864d2ee6">sudo hdiutil attach /Applications/Install\ OS\ X\ Yosemite.app/Contents/SharedSupport/InstallESD.dmg</code></pre>
 <pre class="code-multiline"><code id="e37538549d4e4850d3529342092a7a56">sudo asr restore -source /Volumes/OS\ X\ Install\ ESD/BaseSystem.dmg -target /Volumes/Untitled -erase -format HFS+</code></pre>
